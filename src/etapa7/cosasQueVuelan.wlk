@@ -1,10 +1,11 @@
 /*
  * Traerse las definiciones de la etapa 4
  */
-// import roque.roque
-// import pepita.pepita
-// import masAves.pepon
-// import masAve.pipa
+
+import roque.roque
+import pepita.pepita
+import masAves.pepon
+import masAves.pipa
 
 object helicopteroFeo {
   var kmDesdeUltimoService = 0
@@ -14,7 +15,6 @@ object helicopteroFeo {
   method requiereService() { return kmDesdeUltimoService >= frecuenciaServiceKm } 
   method registarService() { kmDesdeUltimoService = 0 }
 }
-
 
 object pepucha { 
   var cuantoComioDesdeUltimoVuelo = 0
@@ -32,3 +32,11 @@ object pepucha {
   method comer(gramos) { cuantoComioDesdeUltimoVuelo += gramos }
   method esBienTratada() { return kmVoladosConPilas >= kmVoladosSinPilas }
 }
+
+// Roque no puede entrenar a helicópteroFeo porque no entiende
+// los mensajes "comer" y tampoco "haceLoQueQuieras
+
+// Roque no puede entrenar a pepucha porque no entiende
+// los mensajes "volar" y tampoco "haceLoQueQuieras
+
+// Tienen que ser polifórmicos con Roque.

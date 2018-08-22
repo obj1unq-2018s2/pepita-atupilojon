@@ -1,10 +1,24 @@
 
+import comidas.*
+
 object pepon {
-	// aca falta un atributo
-	
-	method comer(cosa, cuanto) { }  // implementar
-	method volar(kms) { }           // implementar
-	method haceLoQueQuieras() { }   // implementar
+	var energia = 0
+	method energia() {return energia}
+	method comer(cosa, gramos) {energia += (cosa.energiaPorGramo() * gramos)/2}	// implementar
+	method volar(kms) {energia -= (kms * 0.5) + 1 }           					// implementar
+	method estaDebil() {return (energia < 50)}
+	method estaFeliz() {return (energia.between(500,1000))}
+	method haceLoQueQuieras() {													
+		if (self.estaDebil()) {
+			self.comer(alpiste,20)
+		}
+		else if (self.estaFeliz()) {
+			self.volar(8)
+		}
+		else {
+		}
+		self.volar(1)
+	}   // implementar
 }
 
 // implementar el objeto entero, salvo haceLoQueQuieras que lo damos hecho

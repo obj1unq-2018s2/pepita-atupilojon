@@ -35,5 +35,5 @@ object pipa {
 	 */
 	method haceLoQueQuieras() { }   // queda asi
 	// pregunta: ¿por qué es necesario agregar este método, sin código?
-	// respuesta: para que el entrenador pueda mandar los mismos mensajes a sus "aves"
+	// respuesta: para que "roque" pueda mandar los mismos mensajes a sus "aves"
 }

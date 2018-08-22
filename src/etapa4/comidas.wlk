@@ -44,4 +44,4 @@ object canelones {
 	method agregarQueso() {conQueso = true}
 	method quitarSalsa() {conSalsa = false}
 	method quitarQueso() {conQueso = false}
-}
+} 
